@@ -11,8 +11,9 @@ app.use(bodyParser.json());
 var mysqlConnection = mysql.createConnection({
     host: dbconfig.host,
     user: dbconfig.user,
-    database: dbconfig.database,
-    password:dbconfig.password
+    password:dbconfig.password,
+    database: dbconfig.database
+  
 });
 
 //ver todos los estudiantes
